@@ -37,7 +37,7 @@ async function main() {
   // Encode all actions into a single EVM script.
   const script = encodeCallScript(actions)
   console.log(
-    `npx dao exec ${daoAddress} ${votingAddress} newVote ${script} MintsAndBurns --environment aragon:${environment} `
+    `npx dao exec ${daoAddress} ${votingAddress} newVote ${script} Permissions --environment aragon:${environment} `
   )
 
   process.exit()
